@@ -23,7 +23,7 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name = "device")
+@Root(name = "device", strict = false)
 public class Device {
 
     @Attribute(name = "identifier", required = true)

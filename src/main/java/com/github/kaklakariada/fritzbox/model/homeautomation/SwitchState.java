@@ -22,7 +22,7 @@ import org.simpleframework.xml.Root;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Root(name = "switch")
+@Root(name = "switch", strict = false)
 public class SwitchState {
     private static final Logger LOG = LoggerFactory.getLogger(SwitchState.class);
 

@@ -20,7 +20,7 @@ package com.github.kaklakariada.fritzbox.model.homeautomation;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name = "temperature")
+@Root(name = "temperature", strict = false)
 public class Temperature {
 
     @Element(name = "celsius", required = false)
@@ -31,6 +31,9 @@ public class Temperature {
 
     public float getCelsius() {
         return (deciCelsius + offsetDeciCelsius) / 10F;
+    }
+    public float getOffset() {
+        return offsetDeciCelsius / 10F;
     }
 
     @Override
