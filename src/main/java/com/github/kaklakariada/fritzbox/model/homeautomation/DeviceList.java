@@ -25,7 +25,7 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-@Root(name = "devicelist")
+@Root(name = "devicelist", strict=false)
 public class DeviceList {
 
     @Attribute(name = "version")
