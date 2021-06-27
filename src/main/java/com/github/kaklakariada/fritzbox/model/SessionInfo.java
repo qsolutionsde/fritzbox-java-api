@@ -23,7 +23,7 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-@Root(name = "SessionInfo")
+@Root(name = "SessionInfo", strict=false)
 public class SessionInfo {
 
     @Element(name = "SID")
