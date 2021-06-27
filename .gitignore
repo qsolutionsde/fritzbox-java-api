@@ -7,3 +7,5 @@ application.properties
 .project
 .settings/org.eclipse.buildship.core.prefs
 target/
+hs_err_pid11684.log
+replay_pid11684.log
